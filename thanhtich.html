@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THPT Tân Phú - Thành tích</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #a8dadc;
+      --secondary: #457b9d;
+      --light: #f1faee;
+      --text-dark: #1d3557;
+      --accent: #ffb4a2;
+      --menu-bg: #0077cc;
+      --menu-hover: #cce6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light);
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      width: 80px;
+      height: 100vh;
+      background-image: url('https://i.pinimg.com/736x/f9/5a/88/f95a8836f69498285b672e8614416a49.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    body::before { left: 0; }
+    body::after { right: 0; }
+
+    .top-banner img {
+      width: 100%;
+      max-height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .custom-nav {
+      background-color: var(--menu-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-small {
+      height: 38px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 8px 12px;
+      font-size: 0.95em;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background-color: var(--menu-hover);
+      color: var(--menu-bg);
+      border-radius: 6px;
+    }
+
+    main {
+      padding: 2em 1em;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+
+    .section-box {
+      background: white;
+      padding: 30px 24px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      animation: fadeInUp 0.8s ease-in-out;
+    }
+
+    h2 {
+      font-size: 1.9em;
+      color: var(--secondary);
+      text-align: center;
+      margin-bottom: 1.2em;
+    }
+
+    h3 {
+      color: var(--accent);
+      margin-bottom: 0.8em;
+      font-size: 1.3em;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    h4 {
+      margin-top: 1em;
+      font-size: 1.05em;
+      color: var(--text-dark);
+    }
+
+    p {
+      margin-bottom: 0.6em;
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+      font-size: 0.95em;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 10px; }
+      .nav-links { flex-direction: column; gap: 6px; }
+      .custom-nav { flex-direction: column; align-items: center; }
+      .logo-small { height: 30px; }
+    }
+  </style>
+</head>
+<body>
+    <nav class="custom-nav">
+    <div class="nav-left">
+      <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/428139535_435183265513765_6639606144939144966_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HZ8QvDCFIgYQ7kNvwHwD7k2&_nc_oc=AdkpAXAULmNWuGXvABHg3Vnr7cfKyCPJZSnr8yRvFPN-sCEjadiej5ucakJSKecfSik&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=_ydh1QRuiatN_1SlxjiwMw&oh=00_AfFPbSU8lhg1btmD9zUbzFm_RWe9XShowjwk4XU4yFQtxg&oe=67FAD051" alt="Logo Trường" class="logo-small" />
+    </div>
+    <div class="nav-links">
+      <a href="index.html">TRANG CHỦ</a>
+      <a href="gioithieu.html">GIỚI THIỆU</a>
+      <a href="hoatdong.html">HOẠT ĐỘNG NGOẠI KHÓA</a>
+      <a href="tuyensinh.html">TUYỂN SINH</a>
+      <a href="thanhtich.html" class="active">THÀNH TÍCH</a>
+      <a href="lienhe.html">LIÊN HỆ</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h2>🏆 Thành tích & Giải thưởng</h2>
+
+      <div class="section-box">
+        <h3>Thành tích Học tập</h3>
+        <h4>Giải Nhất HSG cấp tỉnh - Môn Toán</h4>
+        <p>Học sinh: Nguyễn Văn An (12A2)</p>
+        <p>Năm học: 2024-2025</p>
+        <h4>Giải Nhất HSG cấp tỉnh - Môn Vật lý</h4>
+        <p>Học sinh: Nguyễn Minh Quân & Nguyễn Chí Đạt</p>
+        <p>Năm học: 2024-2025</p>
+      </div>
+
+      <div class="section-box">
+        <h3>Văn nghệ - Thể thao</h3>
+        <h4>Giải Nhất Hội thi Văn nghệ cấp tỉnh</h4>
+        <p>CLB Văn học - Nghệ thuật</p>
+        <p>Tiết mục: Múa truyền thống (2024)</p>
+        <h4>Vô địch Giải Bóng đá Học sinh cấp tỉnh</h4>
+        <p>Đội bóng nam</p>
+        <p>Năm học: 2023</p>
+      </div>
+
+      <div class="section-box">
+        <h3>Giải thưởng & Bằng khen</h3>
+        <h4>Bằng khen của UBND tỉnh Đồng Nai</h4>
+        <p>Ghi nhận đóng góp xuất sắc trong giáo dục</p>
+        <p>Năm: 2023</p>
+
+        <h4>Top 10 trường có điểm thi Đại học cao nhất tỉnh</h4>
+        <p>Năm: 2022, 2023, 2024</p>
+        <p>Thành tích đáng tự hào của toàn trường</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trường THPT Tân Phú - Đồng Nai</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THPT Tân Phú - Tuyển sinh</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #a8dadc;
+      --secondary: #457b9d;
+      --light: #f1faee;
+      --text-dark: #1d3557;
+      --accent: #ffb4a2;
+      --menu-bg: #0077cc;
+      --menu-hover: #cce6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light);
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      width: 80px;
+      height: 100vh;
+      background-image: url('https://i.pinimg.com/736x/f9/5a/88/f95a8836f69498285b672e8614416a49.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    body::before { left: 0; }
+    body::after { right: 0; }
+
+    .top-banner img {
+      width: 100%;
+      max-height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .custom-nav {
+      background-color: var(--menu-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-small {
+      height: 38px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 8px 12px;
+      font-size: 0.95em;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background-color: var(--menu-hover);
+      color: var(--menu-bg);
+      border-radius: 6px;
+    }
+
+    main {
+      padding: 2em 1em;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      color: var(--secondary);
+      margin-bottom: 1em;
+    }
+
+    .btn {
+      background-color: var(--secondary);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: var(--accent);
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    .note {
+      margin-top: 2em;
+      background-color: #fff3cd;
+      border-left: 6px solid #ffeeba;
+      padding: 1em;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+      font-size: 0.95em;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 20px; }
+      .nav-links { flex-direction: column; gap: 6px; }
+      .custom-nav { flex-direction: column; align-items: center; }
+      .logo-small { height: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="custom-nav">
+    <div class="nav-left">
+      <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/428139535_435183265513765_6639606144939144966_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HZ8QvDCFIgYQ7kNvwHwD7k2&_nc_oc=AdkpAXAULmNWuGXvABHg3Vnr7cfKyCPJZSnr8yRvFPN-sCEjadiej5ucakJSKecfSik&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=_ydh1QRuiatN_1SlxjiwMw&oh=00_AfFPbSU8lhg1btmD9zUbzFm_RWe9XShowjwk4XU4yFQtxg&oe=67FAD051" alt="Logo Trường" class="logo-small" />
+    </div>
+    <div class="nav-links">
+      <a href="index.html">TRANG CHỦ</a>
+      <a href="gioithieu.html">GIỚI THIỆU</a>
+      <a href="hoatdong.html">HOẠT ĐỘNG NGOẠI KHÓA</a>
+      <a href="tuyensinh.html" class="active">TUYỂN SINH</a>
+      <a href="thanhtich.html">THÀNH TÍCH</a>
+      <a href="lienhe.html">LIÊN HỆ</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h2>Thông tin tuyển sinh</h2>
+      <p>Vui lòng nhấn vào nút bên dưới để điền form đăng ký tuyển sinh:</p>
+      <p style="text-align: center; margin: 20px 0;">
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfUkhmBqmCZ5kraCaiGBpV0KYDTW4Mhtm44Z5cUSE3yUri0lg/viewform" target="_blank">📝 Mở Form Đăng Ký</a>
+      </p>
+      <p><strong>Kỳ thi vào lớp 10 THPT tại tỉnh Đồng Nai năm học 2024 - 2025</strong> sẽ diễn ra vào các ngày <strong>6/6 và 7/6</strong>.</p>
+      <p>Học sinh thi tuyển vào lớp 10 phải dự thi bằng hình thức thi viết 3 môn: <strong>Toán (tự luận)</strong>, <strong>Ngữ văn (tự luận)</strong> và <strong>Tiếng Anh (trắc nghiệm và tự luận)</strong>.</p>
+      <ul>
+        <li>Toán: 120 phút</li>
+        <li>Ngữ văn: 120 phút</li>
+        <li>Tiếng Anh: 60 phút</li>
+      </ul>
+      <p>Đối với thí sinh đăng ký dự thi vào trường <strong>THPT chuyên Lương Thế Vinh</strong> phải dự thi thêm các môn chuyên tương ứng trong thời gian <strong>150 phút</strong>.</p>
+      <p>Công tác chấm thi sẽ được triển khai ngay sau khi kết thúc kỳ thi từ ngày <strong>08/6/2024</strong>.</p>
+      <div class="note">
+        📌 <strong>Lưu ý:</strong> Thí sinh nên mang theo đầy đủ giấy tờ, đồ dùng học tập cần thiết, có mặt đúng giờ và tuân thủ nội quy phòng thi để kỳ thi diễn ra thuận lợi.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trường THPT Tân Phú - Đồng Nai</p>
+  </footer>
+</body>
+</html>

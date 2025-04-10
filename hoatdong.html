@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>THPT Tân Phú - Hoạt động ngoại khóa</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #a8dadc;
+      --secondary: #457b9d;
+      --light: #f1faee;
+      --text-dark: #1d3557;
+      --accent: #ffb4a2;
+      --menu-bg: #0077cc;
+      --menu-hover: #cce6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light);
+      color: var(--text-dark);
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      width: 80px;
+      height: 100vh;
+      background-image: url('https://i.pinimg.com/736x/f9/5a/88/f95a8836f69498285b672e8614416a49.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    body::before { left: 0; }
+    body::after { right: 0; }
+
+    .top-banner img {
+      width: 100%;
+      max-height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .custom-nav {
+      background-color: var(--menu-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-small {
+      height: 38px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 8px 12px;
+      font-size: 0.95em;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: var(--menu-hover);
+      color: var(--menu-bg);
+      border-radius: 6px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      font-size: 1.8em;
+      color: var(--secondary);
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-size: 1.05em;
+      line-height: 1.7;
+    }
+
+    .activities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin-top: 2em;
+    }
+
+    .activity-card {
+      background-color: var(--light);
+      padding: 1.5em;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .activity-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .activity-card h3 {
+      color: var(--secondary);
+      margin-bottom: 0.6em;
+    }
+
+    .gallery-row img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      margin: 10px 0;
+    }
+
+    .gallery-row img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 20px; }
+      .nav-links { flex-direction: column; gap: 6px; }
+      .custom-nav { flex-direction: column; align-items: center; }
+      .logo-small { height: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="custom-nav">
+    <div class="nav-left">
+      <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/428139535_435183265513765_6639606144939144966_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HZ8QvDCFIgYQ7kNvwHwD7k2&_nc_oc=AdkpAXAULmNWuGXvABHg3Vnr7cfKyCPJZSnr8yRvFPN-sCEjadiej5ucakJSKecfSik&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=_ydh1QRuiatN_1SlxjiwMw&oh=00_AfFPbSU8lhg1btmD9zUbzFm_RWe9XShowjwk4XU4yFQtxg&oe=67FAD051" alt="Logo Trường" class="logo-small" />
+    </div>
+    <div class="nav-links">
+      <a href="index.html">TRANG CHỦ</a>
+      <a href="gioithieu.html">GIỚI THIỆU</a>
+      <a href="hoatdong.html" class="active">HOẠT ĐỘNG NGOẠI KHÓA</a>
+      <a href="tuyensinh.html">TUYỂN SINH</a>
+      <a href="thanhtich.html">THÀNH TÍCH</a>
+      <a href="lienhe.html">LIÊN HỆ</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h2>Hoạt động ngoại khóa</h2>
+    <p>Trường THPT Tân Phú tạo ra môi trường học đường năng động với nhiều hoạt động ngoại khóa đa dạng và đầy cảm hứng.</p>
+    <div class="activities-grid">
+      <div class="activity-card">
+        <h3>Hội trại truyền thống</h3>
+        <p>Hoạt động sôi động gắn kết học sinh qua các trò chơi tập thể và kỹ năng sinh tồn.</p>
+        <p>Hằng năm, Trường THPT Tân Phú tổ chức Hội trại truyền thống như một trong những hoạt động ngoại khóa nổi bật và được mong chờ nhất của học sinh toàn trường. Đây không chỉ là dịp để các em học sinh tạm rời xa những tiết học trên lớp, mà còn là cơ hội tuyệt vời để thể hiện tinh thần đoàn kết, rèn luyện kỹ năng sống, và lưu giữ những kỷ niệm đẹp thời học trò.</p>
+    <p>Hội trại diễn ra trong không khí sôi động, náo nhiệt với sự tham gia hào hứng của tất cả các khối lớp. Ngay từ những ngày đầu chuẩn bị, học sinh đã tích cực tham gia vào việc thiết kế lều trại, trang trí theo chủ đề, luyện tập các tiết mục văn nghệ và chuẩn bị cho các phần thi. Mỗi lớp đều thể hiện tinh thần sáng tạo, đoàn kết thông qua cách bày trí trại, biểu ngữ, và cả những phần trình diễn mang đậm màu sắc riêng</p>
+        <div class="gallery-row">
+  <div class="gallery-row">
+          <img src="https://scontent.fsgn20-1.fna.fbcdn.net/v/t39.30808-6/476007533_1026938886137648_917358091770455304_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PM9v8dks7s0Q7kNvwGhZRXP&_nc_oc=AdlThBP4AH07U9fTuXt95YPfqQOVF8vQjrIe-ybaiOcLiaai4HLt_puSpEK3lb1sdrpaviCJYLDAs80yzC5nDig_&_nc_zt=23&_nc_ht=scontent.fsgn20-1.fna&_nc_gid=YhhoHD1fYi05WKHvDl0gXQ&oh=00_AfFuRbCORgi-RUlFwmgiSWfBAHGY6GmpFOMjf0HAX881zQ&oe=67FB24DC" alt="Ảnh văn hóa 1">
+          <p>Điểm nhấn của hội trại là chuỗi các trò chơi tập thể mang tính vận động và đồng đội như kéo co, nhảy bao bố, chuyền nước, vượt chướng ngại vật... Những tiếng cười giòn giã, những cái nắm tay tiếp sức và những chiến thắng đầy cảm xúc đã để lại ấn tượng khó quên trong lòng mỗi học sinh. Bên cạnh đó, các hoạt động kỹ năng như dựng trại, thuyết trình ý tưởng trại, thi nấu ăn dã ngoại cũng góp phần nâng cao kỹ năng sinh hoạt tập thể, tinh thần hợp tác và trách nhiệm của từng thành viên trong lớp.</p>
+          <p>Hội trại truyền thống không chỉ là một hoạt động ngoại khóa đơn thuần, mà thực sự là một phần trong hành trình trưởng thành của mỗi học sinh Trường THPT Tân Phú – nơi các em học được cách sống, cách yêu thương và sẻ chia.</p>
+        </div>
+               <div class="activity">
+      <h3>🔥 Hội trại 26/3</h3>
+      <p>Chuỗi hoạt động văn nghệ, trò chơi dân gian và thi cắm trại nhằm kỷ niệm ngày thành lập Đoàn TNCS Hồ Chí Minh.</p>
+      <p>Mỗi tháng Ba về, hòa cùng không khí sôi động cả nước hướng tới kỷ niệm ngày thành lập Đoàn TNCS Hồ Chí Minh (26/3), Trường THPT Tân Phú lại rộn ràng tổ chức chương trình Hội trại truyền thống 26/3 – một sân chơi đầy màu sắc, sáng tạo và kết nối tuổi trẻ.</p>
+      <img src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/486174757_1063501885814681_1619526681279843029_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=eLuOsGEeVC4Q7kNvwHNZ_q2&_nc_oc=Admo1jtwyjpoVMl_tSZFTXGAsHzH-Ksj0BGfhcuLHLnA7Q_Y2PABKKXi1ndTTD-PWxk&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=LrKzKhBIuBEn9Q8DjzJ2qQ&oh=00_AfH5gGrgTRCJKcsdA4T4JXWksdZqsbXXgmX6sLzZoMAIkw&oe=67FD7761" alt="Hội trại">
+      <h3>🎉 Không khí tưng bừng, năng lượng bùng nổ</h3>
+      <p>Ngay từ sáng sớm, sân trường đã rực rỡ sắc màu của cờ hoa, khẩu hiệu, và những gian trại được trang trí công phu bởi chính bàn tay của các bạn học sinh. Mỗi chi đoàn là một màu sắc riêng – mang chủ đề sáng tạo từ truyền thống dân tộc đến hiện đại, từ quê hương đất nước đến biển đảo thiêng liêng.</p>
+      <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/486536039_1063835249114678_739100947002804394_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=c8YQYyJVSDcQ7kNvwFAMg36&_nc_oc=Admc0kIhsAmH1xXD6JBtLPgXkoZVqFRDH4S-OBzAY035wZmBZLEqLlD_aLkEDB5m2F8&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=k5Y-s1e5-oF0pdl2-Tq-4Q&oh=00_AfEfh-0kfgLHFEtR3lhguOSKlFjnyT5yx6yVnjAOeFf36Q&oe=67FD5E35" alt="Thi cắm trại">
+    </div>
+
+    <div class="activity">
+      <h3>👑 Cuộc thi "Học sinh thanh lịch"</h3>
+      <p>Sân chơi để học sinh thể hiện tài năng, sự duyên dáng và khả năng giao tiếp tự tin.</p>
+      <p>Trong không khí náo nức của tuổi học trò, chương trình “Học sinh thanh lịch” luôn là một điểm nhấn nổi bật được đông đảo học sinh THPT Tân Phú mong chờ. Đây không đơn thuần là một cuộc thi sắc vóc, mà là sân chơi toàn diện giúp học sinh thể hiện bản lĩnh, tài năng và nhân cách, qua đó lan tỏa hình ảnh học sinh Tân Phú năng động – sáng tạo – tự tin.</p>
+      <img src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/487200985_1066007245564145_1729989071846447043_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JEBgK9mWjSkQ7kNvwHYPrbN&_nc_oc=AdlYx86I9lAT962JY2yY6kCYTXwyvCO2s4mGIVaOoiYZbZWXngvOZjfemzabnPLspU0&_nc_zt=23&_nc_ht=scontent.fsgn5-15.fna&_nc_gid=PXiEqGvUkJmyE_doT6xT7g&oh=00_AfGy8pEWrJFMhqCsDJU_w-ZeIBHSsL4Rtlz6viii2eZmoA&oe=67FD6518" alt="Thanh lịch">
+      <h3>✨ Hành trình tỏa sáng</h3>
+      <p>Để lọt vào vòng chung kết, các thí sinh phải trải qua nhiều vòng thi đầy thử thách:</p>
+      <p>Trang phục truyền thống và hiện đại: tôn vinh nét đẹp thanh lịch, duyên dáng nhưng vẫn giữ bản sắc tuổi học trò.</p>
+      <p>Tài năng cá nhân: từ ca hát, nhảy múa, võ thuật đến biểu diễn nhạc cụ, vẽ tranh, diễn kịch…</p>
+      <p>Phần thi ứng xử: nơi các bạn thể hiện quan điểm sống, khả năng thuyết trình và tư duy logic trước các vấn đề xã hội.</p>
+      <img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/487389915_1066007672230769_8255995635543385045_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=9jimgR1jZuQQ7kNvwFeAMfT&_nc_oc=AdlEINULA05jV8bv2kJ7Qze2nU2SAF4jK9n_Qsf9tF7pTW_PCTYxEDIMke3VfZ_V_Z8&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=2BP-r7uh9O2zrLc86avTHQ&oh=00_AfGyhaumPIBzDN7MR8AhYryC-fIjEhZiJjEe7YGvWNPnBw&oe=67FD6800" alt="Trang phục">
+    
+    </div>
+
+    <div class="activity">
+      <h3>⚽ Hoạt động thể thao</h3>
+      <p>Giao lưu bóng đá, bóng chuyền, cầu lông giữa các lớp và các trường bạn trong khu vực.</p>
+      <p>Tại Trường THPT Tân Phú, thể thao không chỉ đơn thuần là những giờ học Thể dục hay những cuộc thi đấu. Đó là một phần không thể thiếu trong hành trình phát triển toàn diện của học sinh, nơi các bạn được rèn luyện thể lực, ý chí và cả tinh thần đồng đội.</p>
+<h3>🏃‍ Sân chơi cho sức trẻ bùng cháy</h3>
+<p>Hằng năm, nhà trường tổ chức nhiều hoạt động thể thao đa dạng và hấp dẫn như:</p>
+<p>Giải bóng đá học sinh nam</p>
+<p>Giải cầu lông, bóng chuyền, chạy tiếp sức, kéo co,...</p>
+<p>Ngày hội thể thao toàn trường vào tháng 11 để chào mừng ngày Nhà giáo Việt Nam</p>
+      <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/482327834_1051348767029993_4330633302739312215_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=CyOTNU7zeTcQ7kNvwFJdxRC&_nc_oc=AdkdkGLMdRd3eV1wmS8B3_H3Utwv-qThWkd_rNdJBJdtC1BgO3VeHPY-Xhc8spl4_M0&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=w0zeGTmDToCtIeVgICagrQ&oh=00_AfEgDrDA_NJz18J1Hh6VLFrR2vh5ptIbYWtK0WlxthXKdQ&oe=67FD92AE" alt="Bóng đá">
+      <img src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/482203835_1051348203696716_8941689931170111308_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PV7uHcu_j8wQ7kNvwH-ovs2&_nc_oc=AdnLWd5LeKnk0oohI-gZUD2-UNubTvCJxZk41n45clDWD8dFRhRttUEvntY-8n0UMeA&_nc_zt=23&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=WlH6HEvbFruxtmr13w5WXA&oh=00_AfEZNcD_mejQbA6pPIqmxph4agzngz_F1Jr6DBYqdMq14w&oe=67FD90B0" alt="Bóng chuyền">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trường THPT Tân Phú - Đồng Nai</p>
+  </footer>
+</body>
+</html>
+  

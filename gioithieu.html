@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>THPT Tân Phú - Giới thiệu</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #a8dadc;
+      --secondary: #457b9d;
+      --light: #f1faee;
+      --text-dark: #1d3557;
+      --accent: #ffb4a2;
+      --menu-bg: #0077cc;
+      --menu-hover: #cce6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light);
+      color: var(--text-dark);
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      width: 80px;
+      height: 100vh;
+      background-image: url('https://i.pinimg.com/736x/f9/5a/88/f95a8836f69498285b672e8614416a49.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    body::before {
+      left: 0;
+    }
+
+    body::after {
+      right: 0;
+    }
+
+    .top-banner img {
+      width: 100%;
+      max-height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .custom-nav {
+      background-color: var(--menu-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-small {
+      height: 38px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 8px 12px;
+      font-size: 0.95em;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: var(--menu-hover);
+      color: var(--menu-bg);
+      border-radius: 6px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .section {
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    h2 {
+      color: var(--secondary);
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      line-height: 1.7;
+      font-size: 1.05em;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: var(--light);
+      text-align: center;
+      padding: 1.5em 0;
+      font-size: 0.95em;
+      margin-top: 50px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: rotate(-2deg) scale(1.08); 
+    }
+
+    .timeline-item {
+      margin-bottom: 20px;
+      padding-left: 10px;
+      border-left: 4px solid var(--accent);
+    }
+
+    .timeline-item h4 {
+      margin-bottom: 5px;
+      color: var(--primary);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .custom-nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo-small {
+        height: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="custom-nav">
+    <div class="nav-left">
+      <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/428139535_435183265513765_6639606144939144966_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HZ8QvDCFIgYQ7kNvwHwD7k2&_nc_oc=AdkpAXAULmNWuGXvABHg3Vnr7cfKyCPJZSnr8yRvFPN-sCEjadiej5ucakJSKecfSik&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=_ydh1QRuiatN_1SlxjiwMw&oh=00_AfFPbSU8lhg1btmD9zUbzFm_RWe9XShowjwk4XU4yFQtxg&oe=67FAD051" alt="Logo Trường" class="logo-small" />
+    </div>
+    <div class="nav-links">
+      <a href="index.html">TRANG CHỦ</a>
+      <a href="gioithieu.html" class="active">GIỚI THIỆU</a>
+      <a href="hoatdong.html">HOẠT ĐỘNG NGOẠI KHÓA</a>
+      <a href="tuyensinh.html">TUYỂN SINH</a>
+      <a href="thanhtich.html">THÀNH TÍCH</a>
+      <a href="lienhe.html">LIÊN HỆ</a>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="section">
+    <div class="container">
+      <h2>Giới thiệu Trường THPT Tân Phú</h2>
+      <img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/481808636_1046550337509836_1809307537110258716_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=aK3X6XvoQrIQ7kNvwGaP3pG&_nc_oc=Adn3Xd5NfKNYpfv69zsgbkIpJyjlL-rHTiGU-8BT8HPz4KhsFNkDGLAaKcT5NrP8siM&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=j2uEEa6cZZCT2hAYiSabhQ&oh=00_AfFjUHX-p-3VHHPv84dHPuiUOZ3iJmPoXBHkKb0WboV2TQ&oe=67FD58B8" class="school-img" />
+
+      <p><strong>Trường THPT Tân Phú</strong> tự hào là một trong những đơn vị giáo dục tiêu biểu với bề dày hơn 40 năm xây dựng và phát triển tại tỉnh Đồng Nai...</p>
+      <p>Với định hướng giáo dục toàn diện, Trường THPT Tân Phú luôn chú trọng đổi mới phương pháp giảng dạy theo hướng hiện đại...</p>
+      <p>Không chỉ chú trọng đến kiến thức hàn lâm, nhà trường còn đầu tư xây dựng môi trường học tập năng động...</p>
+      <p>Với sứ mệnh <em>“Chắp cánh ước mơ – Kiến tạo tương lai”</em>, Trường THPT Tân Phú hướng tới mục tiêu đào tạo những thế hệ học sinh toàn diện...</p>
+      <p>Chúng tôi tin rằng, mỗi học sinh khi rời cánh cổng THPT Tân Phú sẽ là một công dân tự tin, có bản lĩnh...</p>
+    </div>
+  </main>
+
+  <!-- Giá trị cốt lõi -->
+  <div class="core-values section container">
+    <h2>Giá trị cốt lõi</h2>
+    <ul>
+      <li>Tôn trọng – Hợp tác – Trách nhiệm</li>
+      <li>Học tập suốt đời – Sáng tạo đổi mới</li>
+      <li>Hội nhập – Khởi nghiệp – Nhân ái</li>
+    </ul>
+  </div>
+
+  <!-- Dấu mốc -->
+  <div class="timeline section container">
+    <h2>Dấu mốc phát triển</h2>
+    <div class="timeline-item">
+      <h4>1980</h4>
+      <p>Thành lập Trường Cấp 3 Tân Phú – tiền thân của THPT Tân Phú ngày nay.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>2000</h4>
+      <p>Xây dựng cơ sở mới, mở rộng quy mô đào tạo, hiện đại hóa cơ sở vật chất.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>2015</h4>
+      <p>Được công nhận là trường đạt chuẩn quốc gia.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>2020 – Nay</h4>
+      <p>Đẩy mạnh chuyển đổi số, nâng cao chất lượng dạy học và quản trị trường học thông minh.</p>
+    </div>
+  </div>
+
+  <!-- Tầm nhìn sứ mệnh -->
+  <div class="mission section container">
+    <h2>Tầm nhìn và sứ mệnh</h2>
+    <p><strong>Tầm nhìn:</strong> Trở thành một trong những trường THPT dẫn đầu trong tỉnh về chất lượng giáo dục, đổi mới sáng tạo và hội nhập quốc tế.</p>
+    <p><strong>Sứ mệnh:</strong> Tạo dựng môi trường giáo dục nhân văn, nơi mỗi học sinh đều được phát triển toàn diện về trí tuệ, đạo đức, thể chất và kỹ năng sống.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-copy">
+      <p>&copy; 2025 Trường THPT Tân Phú - Đồng Nai. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

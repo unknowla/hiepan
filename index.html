@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trường THPT Tân Phú - Đồng Nai</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #a8dadc;
+      --secondary: #457b9d;
+      --light: #f1faee;
+      --text-dark: #1d3557;
+      --accent: #ffb4a2;
+      --menu-bg: #0077cc;
+      --menu-hover: #cce6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light);
+      color: var(--text-dark);
+    }
+
+    /* Ảnh banner đầu trang */
+    .top-banner img {
+      width: 100%;
+      max-height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Thanh menu ngang */
+    .custom-nav {
+      background-color: var(--menu-bg);
+      padding: 10px 0;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .custom-nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 8px 16px;
+      font-size: 0.95em;
+      transition: background 0.3s;
+    }
+
+    .custom-nav a:hover {
+      background-color: var(--menu-hover);
+      color: var(--menu-bg);
+      border-radius: 6px;
+    }
+
+    /* Phần nội dung */
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .section {
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    h2 {
+      color: var(--secondary);
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      line-height: 1.7;
+      font-size: 1.05em;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: var(--light);
+      text-align: center;
+      padding: 1.5em 0;
+      font-size: 0.95em;
+      margin-top: 50px;
+    }
+
+    img {
+      width: 800px;
+      border-radius: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: rotate(-2deg) scale(1.08); 
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+      .custom-nav {
+        flex-direction: column;
+        gap: 6px;
+      }
+    }
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      width: 80px;
+      height: 100vh;
+      background-image: url('https://scontent.fsgn20-1.fna.fbcdn.net/v/t39.30808-6/486198434_1064209162410620_5278066604347325143_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ERcsKRyUKd4Q7kNvwHL94Qz&_nc_oc=AdkoUVauYqUeGG6CeNNoT7GxRxx2rPojdCB4gJ2hk0nStBJiDGG80GuEsMrlzuy_hALTGZutyBUgUT83vZkt2FzO&_nc_zt=23&_nc_ht=scontent.fsgn20-1.fna&_nc_gid=y7IinLcZQ--7s6yDP9cdHw&oh=00_AfEQJ_li09OGp9GHaNnatQTxt7M_Cu0ehRfgdPtDExP1Xg&oe=67FDA827');
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    body::before { left: 0; }
+    body::after { right: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Banner ảnh đầu trang -->
+  <div class="top-banner">
+    <img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/480813416_1036559548508915_5450819364727289101_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=1qiwcK4bynkQ7kNvwGxAMM0&_nc_oc=AdnVXNKMi5EZe-p8rV_YpPATF9_w5POXLflwQo1_c2r-shBNdBcngUns-5tYEpFDP34&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=NohY4uWUO9Q_2K32iHDkDg&oh=00_AfEnLLJXCsBXiBp7K31oQhfMoxm_QAwgSLCsrSayud3nGw&oe=67FD4B1A" alt="Cổng Trường THPT Tân Phú">
+  </div>
+<div>
+  <section class="section">
+<h2 style="text-align: center;"> <strong>TRƯỜNG THPT TÂN PHÚ</strong></h2>
+</section>
+  </div>
+  <!-- Thanh menu -->
+
+  <nav class="custom-nav">
+ <a href="index.html">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="cosovatchat.html">Cơ sở vật chất</a>
+    <a href="tuyensinh.html">Tuyển sinh</a>
+    <a href="hoatdong.html">Hoạt động</a>
+  </nav>
+
+  <!-- Nội dung chính -->
+  <div class="container">
+
+    <section class="section">
+      <h2>Chào mừng đến với Trường THPT Tân Phú</h2>
+      <p><strong>Trường THPT Tân Phú</strong> là một trong những cơ sở giáo dục hàng đầu tại tỉnh Đồng Nai, luôn đặt chất lượng đào tạo và phát triển toàn diện học sinh lên hàng đầu.</p>
+       <img src="https://scontent.fsgn20-1.fna.fbcdn.net/v/t39.30808-6/482342923_683933287305427_6662674402177184219_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=hnh4H86HC3UQ7kNvwHmBkYZ&_nc_oc=AdkH4WhV0ufFb0ZhlVU09CjBd9U1EjRnabCngEN-MHUVlYSNYTZq6dSyBREvi7qJs8o44P6dNm7ayIGyjhd-7XzJ&_nc_zt=23&_nc_ht=scontent.fsgn20-1.fna&_nc_gid=Yoc5XU7TD722vDjHSq8LxA&oh=00_AfF47-QUYrDnDHLJkUUkskQW_p_sfgyJFimw33oYSK_jYQ&oe=67FB0AC8" alt="Công tác dạy ">
+            <p><strong>Trường THPT Tân Phú</strong> là nơi kết nối tri thức, lan tỏa đam mê và nuôi dưỡng những ước mơ của thế hệ trẻ Đồng Nai. Chúng tôi tự hào mang đến một môi trường học tập tích cực, sáng tạo và đầy cảm hứng, nơi mỗi học sinh đều được phát triển toàn diện về trí tuệ, kỹ năng và nhân cách.</p>
+            <p>Khám phá các chuyên mục bên trên để tìm hiểu thêm về hoạt động ngoại khóa, chương trình tuyển sinh, những thành tích đáng tự hào và cơ hội kết nối cùng nhà trường!</p>
+      <p>Chúng tôi tự hào với đội ngũ giáo viên tận tâm, cơ sở vật chất hiện đại và môi trường học tập thân thiện.</p>
+      <img src="https://scontent.fsgn20-1.fna.fbcdn.net/v/t39.30808-6/486674718_1066150045549865_1022877858913757269_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qhA8gfY0aMQQ7kNvwH4_R-U&_nc_oc=AdmXubAchWYbkk7QamtJo2uUj_bG9MlqsmvG_FfTIHHncnMZ-hpVnEH6qx5ZW4XB4NdCAKwwxCSSX9DNyvVhY3o-&_nc_zt=23&_nc_ht=scontent.fsgn20-1.fna&_nc_gid=PLnkMF9HC5jYzu-XrURCOw&oh=00_AfHJFFhdmyVwazOUambhbV_tNI7DsUNFhv4nUT-UWmch_A&oe=67FB309D" alt="Công tác dạy ">
+    </section>
+
+    <section class="section">
+      <h2>Tin nổi bật</h2>
+      <ul>
+        <li>🎓 Tuyển sinh năm học 2025 đã bắt đầu – <a href="#">Xem chi tiết</a></li>
+        <li>🏆 Học sinh đạt giải Nhì Quốc gia môn Vật lý</li>
+        <li>📢 Lịch hoạt động ngoại khóa tháng – <a href="#">Xem thêm</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Trường THPT Tân Phú.</p>
+  </footer>
+
+</body>
+</html>

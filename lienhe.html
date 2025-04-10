@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liên hệ - THPT Tân Phú</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ffcfd2;
+      --secondary: #ffb4a2;
+      --light: #fff0f3;
+      --text-dark: #5f0f40;
+      --accent: #ff6392;
+      --menu-bg: #ffafcc;
+      --menu-hover: #ffe5ec;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      width: 80px;
+      height: 100vh;
+      background-image: url('https://i.pinimg.com/736x/f9/5a/88/f95a8836f69498285b672e8614416a49.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    body::before { left: 0; }
+    body::after { right: 0; }
+
+    .banner-top {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0 10px;
+    }
+
+    .banner-top img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .custom-nav {
+      background-color: var(--menu-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-small {
+      height: 36px;
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 8px 14px;
+      font-size: 0.95em;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background-color: var(--accent);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: var(--secondary);
+      font-size: 1.8em;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+      color: #6a4c93;
+    }
+
+    form {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 2px solid #ffd6e0;
+      border-radius: 10px;
+      font-size: 1rem;
+      background-color: var(--light);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      align-self: flex-start;
+      background-color: var(--accent);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: var(--secondary);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: var(--light);
+      text-align: center;
+      padding: 1.5em 0;
+      font-size: 0.95em;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+      .custom-nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav-links {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="custom-nav">
+    <div class="nav-left">
+      <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/428139535_435183265513765_6639606144939144966_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HZ8QvDCFIgYQ7kNvwHwD7k2&_nc_oc=AdkpAXAULmNWuGXvABHg3Vnr7cfKyCPJZSnr8yRvFPN-sCEjadiej5ucakJSKecfSik&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=_ydh1QRuiatN_1SlxjiwMw&oh=00_AfFPbSU8lhg1btmD9zUbzFm_RWe9XShowjwk4XU4yFQtxg&oe=67FAD051" alt="Logo" class="logo-small" />
+    </div>
+    <div class="nav-links">
+      <a href="index.html">TRANG CHỦ</a>
+      <a href="gioithieu.html">GIỚI THIỆU</a>
+      <a href="hoatdong.html">HOẠT ĐỘNG</a>
+      <a href="tuyensinh.html">TUYỂN SINH</a>
+      <a href="thanhtich.html">THÀNH TÍCH</a>
+      <a href="#" class="active">LIÊN HỆ</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h2>📬 Liên hệ với Trường THPT Tân Phú</h2>
+    <div class="contact-info">
+      <p><strong>🏫 Địa chỉ:</strong> Khu phố Hiệp Quyết, Thị trấn Định Quán, Huyện Định Quán, Đồng Nai</p>
+      <p><strong>📞 Điện thoại:</strong> 0251 3851 195</p>
+      <p><strong>📧 Email:</strong> c3.tanphudq@gmail.com</p>
+      <p><strong>🌐 Website:</strong> <a href="https://thpt-tanphu-dongnai.edu.vn" target="_blank">thpt-tanphu-dongnai.edu.vn</a></p>
+    </div>
+
+    <form>
+      <input type="text" name="name" placeholder="Họ và tên" required>
+      <input type="email" name="email" placeholder="Email của bạn" required>
+      <textarea name="message" placeholder="Nội dung cần gửi..." required></textarea>
+      <button type="submit">📨 Gửi liên hệ</button>
+    </form>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2546492022496!2d107.34918677504285!3d11.001066755884188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31741cc89a1d65f5%3A0xd0e09e8bde14b8e5!2zVHLGsOG7nW5nIFRIUFQgVMOibiBQaMO6!5e0!3m2!1svi!2s!4v1712738888888"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trường THPT Tân Phú. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liên hệ - THPT Tân Phú</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #a8dadc;
+      --secondary: #457b9d;
+      --light: #f1faee;
+      --text-dark: #1d3557;
+      --accent: #1d9bf0;
+      --menu-bg: #1b4965;
+      --menu-hover: #edf6f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      width: 80px;
+      height: 100vh;
+      background-image: url('https://i.pinimg.com/736x/f9/5a/88/f95a8836f69498285b672e8614416a49.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    body::before { left: 0; }
+    body::after { right: 0; }
+
+    .banner-top {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0 10px;
+    }
+
+    .banner-top img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .custom-nav {
+      background-color: var(--menu-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-small {
+      height: 36px;
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 8px 14px;
+      font-size: 0.95em;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background-color: var(--accent);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: var(--secondary);
+      font-size: 1.8em;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+      color: #264653;
+    }
+
+    form {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 2px solid #bcd7e0;
+      border-radius: 10px;
+      font-size: 1rem;
+      background-color: var(--light);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      align-self: flex-start;
+      background-color: var(--accent);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: var(--secondary);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: var(--light);
+      text-align: center;
+      padding: 1.5em 0;
+      font-size: 0.95em;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+      .custom-nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav-links {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="custom-nav">
+    <div class="nav-left">
+      <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/428139535_435183265513765_6639606144939144966_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HZ8QvDCFIgYQ7kNvwHwD7k2&_nc_oc=AdkpAXAULmNWuGXvABHg3Vnr7cfKyCPJZSnr8yRvFPN-sCEjadiej5ucakJSKecfSik&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=_ydh1QRuiatN_1SlxjiwMw&oh=00_AfFPbSU8lhg1btmD9zUbzFm_RWe9XShowjwk4XU4yFQtxg&oe=67FAD051" alt="Logo" class="logo-small" />
+    </div>
+    <div class="nav-links">
+      <a href="index.html">TRANG CHỦ</a>
+      <a href="gioithieu.html">GIỚI THIỆU</a>
+      <a href="hoatdong.html">HOẠT ĐỘNG</a>
+      <a href="tuyensinh.html">TUYỂN SINH</a>
+      <a href="thanhtich.html">THÀNH TÍCH</a>
+      <a href="#" class="active">LIÊN HỆ</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h2>📬 Liên hệ với Trường THPT Tân Phú</h2>
+    <div class="contact-info">
+      <p><strong>🏫 Địa chỉ:</strong> Khu phố Hiệp Quyết, Thị trấn Định Quán, Huyện Định Quán, Đồng Nai</p>
+      <p><strong>📞 Điện thoại:</strong> 0251 3851 195</p>
+      <p><strong>📧 Email:</strong> c3.tanphudq@gmail.com</p>
+      <p><strong>🌐 Website:</strong> <a href="https://thpt-tanphu-dongnai.edu.vn" target="_blank">thpt-tanphu-dongnai.edu.vn</a></p>
+    </div>
+
+    <form>
+      <input type="text" name="name" placeholder="Họ và tên" required>
+      <input type="email" name="email" placeholder="Email của bạn" required>
+      <textarea name="message" placeholder="Nội dung cần gửi..." required></textarea>
+      <button type="submit">📨 Gửi liên hệ</button>
+    </form>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2546492022496!2d107.34918677504285!3d11.001066755884188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31741cc89a1d65f5%3A0xd0e09e8bde14b8e5!2zVHLGsOG7nW5nIFRIUFQgVMOibiBQaMO6!5e0!3m2!1svi!2s!4v1712738888888"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trường THPT Tân Phú. All rights reserved.</p>
+  </footer>
+</body>
+</html>
